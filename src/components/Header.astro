@@ -1,0 +1,38 @@
+---
+interface Props {
+  currentPage?: string;
+}
+
+const { currentPage = '' } = Astro.props;
+
+const navLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/projects', label: 'Projects' },
+];
+---
+
+<header class="border-b border-black">
+  <div class="max-w-content mx-auto px-6 py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+    <a href="/" class="font-heading font-bold text-xl uppercase tracking-tight text-black hover:text-accent transition-colors">
+      Pete McPherson
+    </a>
+    <nav class="flex gap-8" aria-label="Main navigation">
+      {
+        navLinks.map((link) => {
+          const isActive = currentPage === link.href;
+          return (
+            <a
+              href={link.href}
+              class={`font-body text-sm font-medium uppercase tracking-wide transition-colors ${
+                isActive ? 'text-accent' : 'text-black hover:text-accent'
+              }`}
+            >
+              {link.label}
+            </a>
+          );
+        })
+      }
+    </nav>
+  </div>
+</header>

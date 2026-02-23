@@ -1,0 +1,17 @@
+{
+  "name": "pete-mcpherson-portfolio",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.2.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^5.17.3",
+    "tailwindcss": "^3.4.0"
+  }
+}

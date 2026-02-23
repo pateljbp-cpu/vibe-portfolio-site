@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+
+// Placeholder projects — Pete will replace with real titles and descriptions
+const projects = [
+  { title: 'Project One', description: 'Short placeholder description for the first project. Pete will add real content here.' },
+  { title: 'Project Two', description: 'Short placeholder description for the second project. Replace with actual project details.' },
+  { title: 'Project Three', description: 'Short placeholder description for the third project. Add link and summary as needed.' },
+];
+---
+
+<BaseLayout title="Projects | Pete McPherson" description="Explore Pete McPherson's projects and work.">
+  <Header currentPage="/projects" />
+  <main>
+    <section class="max-w-content mx-auto px-6 pt-16 pb-12">
+      <h1 class="font-heading font-bold text-4xl sm:text-5xl uppercase tracking-tight text-black">
+        Projects
+      </h1>
+      <p class="font-body text-lg text-black/80 mt-4 max-w-2xl">
+        <!-- Placeholder: Intro line for projects -->
+        A selection of work and side projects. More coming soon.
+      </p>
+    </section>
+
+    <section class="max-w-content mx-auto px-6 pb-16">
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" role="list">
+        {projects.map((project) => (
+          <ProjectCard
+            title={project.title}
+            description={project.description}
+            href="#"
+          />
+        ))}
+      </div>
+    </section>
+
+    <section class="border-t border-black">
+      <div class="max-w-content mx-auto px-6 py-20">
+        <h2 class="font-heading font-bold text-2xl uppercase text-black">
+          Get the newsletter
+        </h2>
+        <p class="font-body text-black/80 mt-2 mb-6 max-w-xl">
+          Weekly ideas and updates. One email, no clutter.
+        </p>
+        <NewsletterForm />
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

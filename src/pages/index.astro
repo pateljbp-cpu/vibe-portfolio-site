@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+---
+
+<BaseLayout title="Pete McPherson | Home" description="Pete McPherson's portfolio. Writer, creator, and builder. Join the weekly newsletter.">
+  <Header currentPage="/" />
+  <main>
+    <section class="max-w-content mx-auto px-6 pt-20 pb-24">
+      <h1 class="font-heading font-bold text-4xl sm:text-5xl uppercase tracking-tight text-black max-w-2xl">
+        <!-- Placeholder: Replace with Pete's actual headline -->
+        Hi, I'm Pete McPherson
+      </h1>
+      <p class="font-body text-xl mt-6 text-black/80 max-w-xl">
+        <!-- Placeholder: Replace with tagline -->
+        Writer, creator, and builder. Sharing ideas and projects that matter.
+      </p>
+      <div class="mt-12">
+        <h2 class="sr-only">Newsletter signup</h2>
+        <p class="font-body text-sm uppercase tracking-wide text-black/70 mb-4">
+          Get my weekly newsletter
+        </p>
+        <NewsletterForm />
+      </div>
+    </section>
+
+    <section class="border-t border-black">
+      <div class="max-w-content mx-auto px-6 py-20">
+        <p class="font-body text-lg text-black/80 max-w-2xl leading-relaxed">
+          <!-- Placeholder: Brief intro for Pete to replace -->
+          I create content and build things that help people think clearly and take action.
+          Explore my projects below or learn more about me.
+        </p>
+        <a
+          href="/projects"
+          class="inline-block mt-8 px-6 py-3 border-2 border-black font-heading font-bold text-sm uppercase tracking-wide text-black hover:bg-black hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+        >
+          View Projects
+        </a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

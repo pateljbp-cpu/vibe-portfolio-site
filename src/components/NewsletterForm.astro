@@ -1,0 +1,33 @@
+---
+// Placeholder form — no backend. Pete can connect to a service later.
+---
+
+<div class="newsletter-form">
+  <form
+    action="#"
+    method="post"
+    class="flex flex-col sm:flex-row gap-3 max-w-md"
+    aria-label="Newsletter signup"
+  >
+    <label for="newsletter-email" class="sr-only">Email address</label>
+    <input
+      id="newsletter-email"
+      type="email"
+      name="email"
+      required
+      placeholder="Enter your email"
+      class="flex-1 min-w-0 px-4 py-3 border-2 border-black font-body text-black placeholder:text-black/50 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent focus:ring-offset-2"
+      autocomplete="email"
+    />
+    <button
+      type="submit"
+      class="px-6 py-3 bg-accent text-white font-heading font-bold text-sm uppercase tracking-wide hover:bg-black transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 shrink-0"
+    >
+      Subscribe
+    </button>
+  </form>
+  <p class="mt-2 font-body text-sm text-black/70">
+    <!-- Placeholder: Pete can add disclaimer or frequency note here -->
+    Join the weekly newsletter. No spam, unsubscribe anytime.
+  </p>
+</div>
