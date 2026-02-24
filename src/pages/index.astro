@@ -5,37 +5,34 @@ import Footer from '../components/Footer.astro';
 import NewsletterForm from '../components/NewsletterForm.astro';
 ---
 
-<BaseLayout title="Jay Patel | Home" description="Jay Patel's portfolio. blah...blah..blah.... Join the weekly newsletter.">
+<BaseLayout title="Jay Patel | Home" description="Jay Patel's portfolio. Sharing ideas and projects that matter. Join the weekly newsletter.">
   <Header currentPage="/" />
   <main>
-    <section class="max-w-content mx-auto px-6 pt-20 pb-24">
-      <h1 class="font-heading font-bold text-4xl sm:text-5xl uppercase tracking-tight text-black max-w-2xl">
-        <!-- Placeholder: Replace with Jay's actual headline -->
+    <section class="max-w-content mx-auto px-6 pt-16 sm:pt-24 pb-20 sm:pb-28">
+      <h1 class="font-heading font-bold uppercase text-black max-w-2xl">
         Hi, I'm Jay Patel
       </h1>
-      <p class="font-body text-xl mt-6 text-black/80 max-w-xl">
-        <!-- Placeholder...blah.blah...blaahhh...r: Replace with tagline -->
-       . Sharing ideas and projects that matter.
+      <p class="font-body text-xl sm:text-2xl mt-5 text-neutral-600 max-w-xl leading-relaxed">
+        Sharing ideas and projects that matter.
       </p>
       <div class="mt-12">
         <h2 class="sr-only">Newsletter signup</h2>
-        <p class="font-body text-sm uppercase tracking-wide text-black/70 mb-4">
+        <p class="font-body text-sm font-medium uppercase tracking-wide text-neutral-500 mb-4">
           Get my weekly newsletter
         </p>
         <NewsletterForm />
       </div>
     </section>
 
-    <section class="border-t border-black">
-      <div class="max-w-content mx-auto px-6 py-20">
-        <p class="font-body text-lg text-black/80 max-w-2xl leading-relaxed">
-          <!-- Placeholder: Brief intro for Jay P to replace -->
+    <section class="border-t border-neutral-200 bg-surface">
+      <div class="max-w-content mx-auto px-6 py-16 sm:py-24">
+        <p class="font-body text-lg sm:text-xl text-neutral-700 max-w-2xl leading-relaxed">
           I create content and build things that help people think clearly and take action.
           Explore my projects below or learn more about me.
         </p>
         <a
           href="/projects"
-          class="inline-block mt-8 px-6 py-3 border-2 border-black font-heading font-bold text-sm uppercase tracking-wide text-black hover:bg-black hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+          class="inline-block mt-8 px-6 py-3.5 bg-accent text-white font-heading font-bold text-sm uppercase tracking-wide hover:bg-black transition-colors rounded focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
         >
           View Projects
         </a>
