@@ -1,4 +1,4 @@
-# Agent guide — Pete McPherson portfolio
+# Agent guide — Jay Patel portfolio
 
 This file gives AI agents and developers context for working in this repo. For user-facing setup and deployment, see [README.md](./README.md). For Windows/Node environment setup, see [docs/WINDOWS-NODE-SETUP.md](./docs/WINDOWS-NODE-SETUP.md).
 
@@ -6,7 +6,7 @@ This file gives AI agents and developers context for working in this repo. For u
 
 ## Project overview
 
-- **What it is:** A minimal, static portfolio site for Pete McPherson. Goal: educate visitors and drive newsletter signups.
+- **What it is:** A minimal, static portfolio site for Jay Patel. Goal: educate visitors and drive newsletter signups.
 - **Stack:** Astro (static), Tailwind CSS, no backend. Deploy target: Cloudflare Pages.
 - **Primary CTA:** Newsletter email signup (frontend only; backend to be connected later).
 

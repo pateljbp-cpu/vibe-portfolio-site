@@ -4,6 +4,6 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   integrations: [tailwind(), sitemap()],
-  site: 'https://your-domain.pages.dev',
+  site: 'https://vibe-portfolio-site.patel-jbp.workers.dev/',
   output: 'static',
 });

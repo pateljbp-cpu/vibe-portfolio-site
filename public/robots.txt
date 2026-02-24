@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://your-domain.pages.dev/sitemap-index.xml
+Sitemap: https://vibe-portfolio-site.patel-jbp.workers.dev/
