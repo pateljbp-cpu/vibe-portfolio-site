@@ -1,6 +1,6 @@
-# Pete McPherson — Portfolio Site
+# Jay Patel — Portfolio Site
 
-A minimal, bold portfolio site for Pete McPherson built with **Astro** and **Tailwind CSS**. The site is static, fast, and focused on educating visitors and driving newsletter signups.
+A minimal, bold portfolio site for Jay Patel built with **Astro** and **Tailwind CSS**. The site is static, fast, and focused on educating visitors and driving newsletter signups.
 
 ## Tech Stack
 
@@ -114,4 +114,4 @@ All copy and project entries are **placeholders**. Replace them with real conten
 
 ---
 
-Built for Pete McPherson. Replace placeholders, add your domain, and ship.
+Built for Jay Patel. Replace placeholders, add your domain, and ship.
